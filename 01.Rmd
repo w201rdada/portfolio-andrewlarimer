@@ -1,4 +1,4 @@
-# Speech2UML {#diagramming-at-the-speed-of-speech}
+# Speech2Graph {#diagramming-at-the-speed-of-speech}
 
 #### Keywords {-}
 
@@ -14,11 +14,11 @@ In this project, I propose to build a tool that will convert the speech of a bra
 
 ## A case for text to graphs for NLU
 
-In addition to the practical use above, this project serves as a first step towards a more longterm goal. If natural language processing is to move beyond pattern-matching and into understanding, written and spoken text needs to be able to be converted into a graph structure. UML class diagrams' standard terminology (like "class", "method" and "inherits from"), clear purpose, and frequent use by technophiles all contribute towards this type of diagrams being a good beachhead graph structure to target for an initial foray into speech-to-knowledge-graph translation.
+In addition to the practical use above, this project serves as a first step towards a more longterm goal. To build machine systems that can remember, analyze information, and understand the potential dynamics in a given context, written and spoken text needs to be able to be converted into a knowledge graph. UML class diagrams' use of standard terminology (like "class", "method" and "inherits from"), clear purpose (as opposed to more general mind maps), and frequent use by technophiles all contribute towards this type of diagrams being a good beachhead graph structure to target for an initial foray into speech-to-knowledge-graph translation.
 
 ## Process
 
-I propose to use Amazon Transcribe to turn speech into text. Lex will most likely serve as the primary chat engine, with spaCy or ParlAI powering the conversational logic and TinkerPop3 powering the graph's knowledge storage and traversal. The graph will be visually rendered to the canvas via d3.
+I propose to use Amazon Transcribe or Speech-to-Text-WaveNet to turn speech into text. Amazon Lex will most likely serve as the primary chat engine, with spaCy or ParlAI helping to process incoming language. PyTorch neural networks will be deployed to identify linguistic structures (like queries vs declarative or imperative sentences). For synonym flexibility, trained FastText vectors or Cortical.io semantic fingerprints will be used (so that "let's make" can trigger the same actions as "let's create" without all such terms needing to be hard coded). Once language is processed, TinkerPop3 will power the graph's knowledge storage and traversal. The graph will be visually rendered to the canvas via d3.
 
 ## Usage example
 
