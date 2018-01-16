@@ -8,17 +8,33 @@
 
 ## The importance of planning at brainstorming speed.
 
-The quality of the execution of a project is usually related to the level of planning that went into it, but often critical steps in the planning phase are missed. The thorough creation of easily understood, visual planning documents takes time, so many groups instead talk in generalities, with everyone affirming that they're on the same page, without having a concrete representation of exactly what's being discussed. Or for work on solo projects, a creator will have a partially baked version of a plan in his or her head, and then figure that they'll go ahead and dive into execution before they've properly diagrammed, just to get things moving. The ideas are moving more quickly than they can be diagrammed, and a frustrated creator feels like they ought to just move forward into creation.
+The quality of the execution of a project is usually related to the level of planning that went into it, but often critical steps in the planning phase are missed.
 
-In this project, I propose to build a tool that will convert the speech of a brainstorming group of developers into a clear UML class diagram at as close to the speed of a standard brainstorming session as possible. This will allow creators to see the brainstorming process through to its natural ending, rather than getting frustrated and moving into production prematurely. The resulting increase in planning will help developers create more well-thought-out and stable products.
+The thorough creation of easily understood, visual planning documents takes time, so many groups instead talk in generalities, with everyone affirming that they're on the same page, without having a concrete representation of exactly what's being discussed.
+
+Or for work on solo projects, a creator will have a partially baked version of a plan in his or her head, and then figure that they'll go ahead and dive into execution before they've properly diagrammed, just to get things moving. The ideas are moving more quickly than they can be diagrammed, and a frustrated creator feels like they ought to just move forward into creation.
+
+In this project, I propose to build a tool that will convert the speech of a brainstorming group of developers into a clear UML class diagram at as close to the speed of a standard brainstorming session as possible. This will allow creators to see the brainstorming process through to its natural ending, rather than getting frustrated and moving into production prematurely.
+
+The resulting increase in planning happening at all rather than being skipped as a too-slow and too-cumbersome task will help developers create more well-thought-out and stable products.
 
 ## A case for text to graphs for NLU
 
-In addition to the practical use above, this project serves as a first step towards a more longterm goal. To build machine systems that can remember, analyze information, and understand the potential dynamics in a given context, written and spoken text needs to be able to be converted into a knowledge graph. UML class diagrams' use of standard terminology (like "class", "method" and "inherits from"), clear purpose (as opposed to more general mind maps), and frequent use by technophiles all contribute towards this type of diagrams being a good beachhead graph structure to target for an initial foray into speech-to-knowledge-graph translation.
+In addition to the immediate use above, this project serves as a first step towards a more longterm goal.
+
+To build machine systems that can remember, analyze information, and understand the potential dynamics in a given context, written and spoken text needs to be able to be converted into a knowledge graph. UML class diagrams' use of standard terminology (like "class", "method" and "inherits from"), clear purpose (as opposed to more general mind maps), and frequent use by technophiles all contribute towards this type of diagrams being a good beachhead graph structure to target for an initial foray into speech-to-knowledge-graph translation.
 
 ## Process
 
-I propose to use Amazon Transcribe or Speech-to-Text-WaveNet to turn speech into text. Amazon Lex will most likely serve as the primary chat engine, with spaCy or ParlAI helping to process incoming language. PyTorch neural networks will be deployed to identify linguistic structures (like queries vs declarative or imperative sentences). For synonym flexibility, trained FastText vectors or Cortical.io semantic fingerprints will be used (so that "let's make" can trigger the same actions as "let's create" without all such terms needing to be hard coded). Once language is processed, TinkerPop3 will power the graph's knowledge storage and traversal. The graph will be visually rendered to the canvas via d3.
+I propose to use Amazon Transcribe or Speech-to-Text-WaveNet to turn speech into text.
+
+Amazon Lex will most likely serve as the primary chat engine, with spaCy or ParlAI helping to process incoming language. PyTorch neural networks will be deployed to identify linguistic structures (like queries vs declarative or imperative sentences).
+
+For synonym flexibility, trained FastText vectors or Cortical.io semantic fingerprints will be used (so that "let's make" can trigger the same actions as "let's create" without all such terms needing to be hard coded).
+
+Once language is processed, TinkerPop3 will power the graph's knowledge storage and traversal. The graph will be visually rendered to the canvas via d3.
+
+As the process is refined, I propose testing deployment of it on an Amazon DeepLens such that processing can occur on the device & result in an immediate update on-screen via the device's HDMI port, without the need for roundtripping to the cloud.
 
 ## Usage example
 
@@ -42,4 +58,6 @@ Jill: Wait, what are we talking about? There should just be the "Player Side" cl
 
 ## End goal
 
-The primary goal of this project is to use the concrete, practical form of a UML class diagram. This will provide a practical use case for a prototype of a spoken interface that can handle some flexibility as it creates a knowledge graph that represents understanding of some kind of system.
+The primary goal of this project is to use the concrete, practical form of a UML class diagram.
+
+This will provide a practical use case for a prototype of a spoken interface that can handle some flexibility as it creates a knowledge graph that is a first step to building persistent understanding of complex systems.
