@@ -1,24 +1,45 @@
-# My first cool idea {#slug-one}
+# Speech2UML {#diagramming-at-the-speed-of-speech}
 
 #### Keywords {-}
 
-yaba, daba, do
+- NLP / NLU
+- Graph
+- UML
 
-## A beginning.
+## The importance of planning at brainstorming speed.
 
-Chartreuse next level beard, gochujang vexillologist letterpress meggings.  Godard in  vero, raw denim asymmetrical small batch shabby chic.  Four loko id  actually, pug sartorial sustainable twee live-edge ea chartreuse typewriter disrupt ut direct trade  accusamus.  Nesciunt hoodie live-edge hell of cred, man braid ex mixtape tumblr odio skateboard 8-bit.  Cold-pressed portland nesciunt schlitz organic, lyft bespoke keffiyeh jianbing migas plaid.  Aute  delectus id  master cleanse migas.  Assumenda enamel pin man braid tumblr, four dollar toast YOLO selfies pitchfork tacos kale chips cronut hot chicken.
+The quality of the execution of a project is usually related to the level of planning that went into it, but often critical steps in the planning phase are missed. The thorough creation of easily understood, visual planning documents takes time, so many groups instead talk in generalities, with everyone affirming that they're on the same page, without having a concrete representation of exactly what's being discussed. Or for work on solo projects, a creator will have a partially baked version of a plan in his or her head, and then figure that they'll go ahead and dive into execution before they've properly diagrammed, just to get things moving. The ideas are moving more quickly than they can be diagrammed, and a frustrated creator feels like they ought to just move forward into creation.
 
-## A middle.
+In this project, I propose to build a tool that will convert the speech of a brainstorming group of developers into a clear UML class diagram at as close to the speed of a standard brainstorming session as possible. This will allow creators to see the brainstorming process through to its natural ending, rather than getting frustrated and moving into production prematurely. The resulting increase in planning will help developers create more well-thought-out and stable products.
 
-Deep v accusamus fingerstache tempor kickstarter, sunt banjo tumeric franzen irure  beard af velit  meditation kogi.  Keffiyeh fam shoreditch voluptate  pork belly.  Trust fund vape fixie, dolor  lomo exercitation cardigan.  Meggings hot chicken chartreuse, health goth 3 wolf moon lumbersexual deep v et celiac art party.  Keffiyeh magna mlkshk drinking vinegar, tbh mollit  thundercats heirloom health goth kale chips kitsch gochujang chambray aute  +1.  Heirloom ugh chicharrones franzen locavore swag.  Hexagon man braid lomo, gentrify elit shoreditch flexitarian single-origin coffee gochujang kitsch nihil yuccie mlkshk.
+## A case for text to graphs for NLU
 
-<!-- ...or include images directly from the web. Cite your sources! -->
-```{r machine-learning,echo=FALSE,fig.cap='[xkcd: Machine Learning](https://xkcd.com/1838/)',fig.align='center',out.width='50%'}
-knitr::include_graphics('https://imgs.xkcd.com/comics/machine_learning.png')
-```
+In addition to the practical use above, this project serves as a first step towards a more longterm goal. If natural language processing is to move beyond pattern-matching and into understanding, written and spoken text needs to be able to be converted into a graph structure. UML class diagrams' standard terminology (like "class", "method" and "inherits from"), clear purpose, and frequent use by technophiles all contribute towards this type of diagrams being a good beachhead graph structure to target for an initial foray into speech-to-knowledge-graph translation.
 
-Commodo mustache pinterest yr, nostrud nesciunt esse  photo booth.  Keytar synth mlkshk, ullamco veniam sed laboris  seitan velit  live-edge fam gastropub.  Ad mumblecore nihil messenger bag williamsburg occaecat.  Bushwick pickled ullamco, keytar letterpress vice chillwave cillum.  Voluptate  listicle irure  food truck coloring book shoreditch.  Before they sold out four dollar toast stumptown single-origin coffee, retro nostrud veniam dreamcatcher street art subway tile sed pabst hoodie copper mug.  Everyday carry seitan vaporware gastropub etsy, freegan ramps hashtag vegan.
+## Process
 
-## An end.
+I propose to use Amazon Transcribe to turn speech into text. Lex will most likely serve as the primary chat engine, with spaCy or ParlAI powering the conversational logic and TinkerPop3 powering the graph's knowledge storage and traversal. The graph will be visually rendered to the canvas via d3.
 
-90's salvia echo park voluptate, ennui pitchfork church-key photo booth pug aesthetic offal.  Jianbing lomo disrupt before they sold out umami.  Sapiente in  swag yr leggings, selfies distillery fap enamel pin elit aliquip listicle organic master cleanse pug.  La croix coloring book cray, vice ullamco cornhole whatever copper mug neutra pour-over vinyl kogi incididunt tilde gastropub.  Prism veniam VHS, sustainable ea meh viral duis.  Hell of health goth 8-bit microdosing sed keffiyeh.  Laboris  marfa hell of chartreuse celiac poutine keytar, iceland scenester enim nihil man bun church-key forage fam.
+## Usage example
+
+[Starting with a blank monitor in a conference room. Milo & Jill are glancing at the screen while tossing a ball back and forth.]
+
+Milo: Should we have a "Ping-Pong Tabletop Class?"
+
+[A rectangle is drawn with a "Ping-Pong Tabletop" label at the top. The border is a dashed line and a question mark icon in a corner identifies it as a suggestion needing confirmation, because Milo phrased it as a question.]
+
+Jill: No. It should really be separate "Player 1 Side", "Player 2 Side", and "Net" Classes.
+
+[Jill's starting "No" answers the system's question about the "Ping Pong Tabletop" class, and that is deleted. The subsequent classes she mentions are created.]
+
+Milo: Okay right. And "Player 1 Side" and "Player 2 Side" can inherit from a "Player Side" class.
+
+[A "Side" class is drawn with inheritance arrows leading to it from "Player 1 Side" and "Player 2 Side".]
+
+Jill: Wait, what are we talking about? There should just be the "Player Side" class. Scratch "Player 1 Side" and "Player 2 Side." Those will just be instances...
+
+["Player 1 Slide" and "Player 2 Slide" are deleted, and the conversation continues...]
+
+## End goal
+
+The primary goal of this project is to use the concrete, practical form of a UML class diagram. This will provide a practical use case for a prototype of a spoken interface that can handle some flexibility as it creates a knowledge graph that represents understanding of some kind of system.
