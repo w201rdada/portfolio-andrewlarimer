@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 # Speech2Graph {#diagramming-at-the-speed-of-speech}
 
 #### Keywords {-}
@@ -8,25 +13,19 @@
 
 ## The importance of planning at brainstorming speed.
 
-It's no secret that the quality of a project is often a direct result of the amount of planning that went into it. Nevertheless, project creators frequently plow past critical planning steps due to their eagerness to dive in and get started on a project.
+It’s common knowledge that the quality of a project is usually a direct result of the amount of planning that goes into it. Nevertheless, project creators frequently plow past critical planning steps.
 
-One milestone that is often skipped is the creation of a concrete, visual representation of a plan. No doubt many of us can relate to conversations during which everyone verbally affirms that they're on the same page as the group, only for it to become clear as the project moves forward that everyone had a different idea of what was supposed to happen.
+One milestone that is often skipped in software development is the creation of robust UML class diagrams, which provide concrete, visual representations of how the various elements of a piece of software will divide responsibilities and interact with one another.
 
-Or for work on solo projects, a creator will have a partially baked version of a plan in his or her head, and then figure that they'll dive into execution and work out the details as they proceed.
+![An example of a UML Class Diagram](https://www.uml-diagrams.org/examples/class-diagram-example-hasp-licensing-domain.png)
 
-In both situations, I suggest that if a concrete, visual representation of a project could be created at the speed at which brainstorming naturally occurs, more project creators would embrace this critical phase rather than skipping it due to overeagerness.
-
-In this project, I propose to build a tool that will convert the speech of a brainstorming group of developers into a clear UML class diagram at the speed of a standard verbal brainstorming session. This will allow creators to see the brainstorming process through to its natural ending, rather than assuming the group knows what's going on and moving the project into production prematurely.
-
-The goal is that the resulting increase in concrete planning and decision-making at this early phase will enable developers to create more well-thought-out and stable products and reduce slowdowns for further decision-making once production sprints are underway.
+I propose to build an NLP tool that will convert the speech of a brainstorming group of developers into a clear UML class diagram. The goal is that the frictionless creation of clear, useful planning documents will enable developers to create more well-thought-out and stable products.
 
 ## A case for text to graphs for NLU
 
-In addition to the immediate use above, this project serves as a first step towards another, longer-term goal.
+In addition to this immediate use case, this project serves as a first step towards another, longer-term goal: the creation of machine systems that can parse longer text inputs, remembering attributes of multiple parties described and understanding the developing relationships & potential dynamics between them. I believe that to develop this kind of understanding requires the conversion of text into knowledge graphs or similar structures.
 
-To build machine systems that can remember facts about multiple parties and understand the potential dynamics of a given context built up over the course of a story, written and spoken text needs to be able to be converted into a knowledge graph.
-
-UML class diagrams' use of standard terminology (like "class", "method" and "inherits from"), their clear purpose of describing interactions between OOP classes, and their frequent use by technophiles all contribute towards this type of diagram being a good beachhead graph structure to target for an initial foray into speech-to-knowledge-graph translation.
+UML class diagrams are a good initial target for this treatment due to their use of standard terminology (like "class", "method" and "inherits from"), their clear purpose of describing interactions between OOP classes, and their frequent use by technophiles.
 
 ## Process
 
@@ -40,27 +39,7 @@ Once the language has been processed, TinkerPop3 will provide the graph's knowle
 
 The graph will be visually rendered to the display canvas via d3, or potentially an open source UML toolkit to allow for subsequent or parallel editing via a standard GUI interface.
 
-As the process is refined, I propose testing deployment on an Amazon DeepLens such that processing can occur on the device & result in an immediate update on-screen via the device's HDMI port, without the need for roundtripping to the cloud.
-
-## Usage example
-
-[Starting with a blank monitor in a conference room. Milo & Jill are glancing at the screen while tossing a ball back and forth.]
-
-Milo: Should we have a "Ping-Pong Tabletop Class?"
-
-[A rectangle is drawn with a "Ping-Pong Tabletop" label at the top. The border is a dashed line and a question mark icon in a corner identifies it as a suggestion needing confirmation, because Milo phrased it as a question.]
-
-Jill: No. It should really be separate "Player 1 Side", "Player 2 Side", and "Net" Classes.
-
-[Jill's starting "No" answers the system's question about the "Ping Pong Tabletop" class, and that is deleted. The subsequent classes she mentions are created.]
-
-Milo: Okay right. And "Player 1 Side" and "Player 2 Side" can inherit from a "Player Side" class.
-
-[A "Side" class is drawn with inheritance arrows leading to it from "Player 1 Side" and "Player 2 Side".]
-
-Jill: Wait, what are we talking about? There should just be the "Player Side" class. Scratch "Player 1 Side" and "Player 2 Side." Those will just be instances...
-
-["Player 1 Slide" and "Player 2 Slide" are deleted, and the conversation continues...]
+As the process is refined, hardware needs will need to be determined such that processing can happen in realtime.
 
 ## End goal
 
