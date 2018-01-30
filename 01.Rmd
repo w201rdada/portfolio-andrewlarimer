@@ -3,6 +3,11 @@ output:
   pdf_document: default
   html_document: default
 ---
+```{r init,include=FALSE,echo=FALSE}
+readLines('https://www.zotero.org/api/users/4663483/collections/P34C3QJQ/items/top?limit=25&format=bibtex&key=EUKxuNES1nO0pWpsDWVd6mJS&v=1') %>% writeLines('references.bib')
+library(magrittr)
+```
+
 # Speech2Graph {#diagramming-at-the-speed-of-speech}
 
 #### Keywords {-}
@@ -28,6 +33,8 @@ In addition to this immediate use case, this project serves as a first step towa
 UML class diagrams are a good initial target for this treatment due to their use of standard terminology (like "class", "method" and "inherits from"), their clear purpose of describing interactions between OOP classes, and their frequent use by technophiles.
 
 ## Process
+
+The process will be based on previous work by Kumar, et al.\cite{KumarKnowledgeGraphbased2017e}
 
 I propose to use Amazon Transcribe or Speech-to-Text-WaveNet to convert speech into text.
 
