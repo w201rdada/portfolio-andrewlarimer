@@ -22,6 +22,12 @@ It’s common knowledge that the quality of a project is usually a direct result
 
 One milestone that is often skipped in software development is the creation of robust UML class diagrams, which provide concrete, visual representations of how the various elements of a piece of software will divide responsibilities and interact with one another.
 
+```{r out.height = "300px", echo=FALSE}}
+knitr::include_graphics("area_diagArtboard 1.png")
+```
+```
+
+
 ![An example of a UML Class Diagram](https://www.uml-diagrams.org/examples/class-diagram-example-hasp-licensing-domain.png)
 
 I propose to build an NLP tool that will convert the speech of a brainstorming group of developers into a clear UML class diagram. The goal is that the frictionless creation of clear, useful planning documents will enable developers to create more well-thought-out and stable products.
