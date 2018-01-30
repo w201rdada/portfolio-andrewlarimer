@@ -28,12 +28,6 @@ One milestone that is often skipped in software development is the creation of r
 
 I propose to build an NLP tool that will convert the speech of a brainstorming group of developers into a clear UML class diagram. The goal is that the frictionless creation of clear, useful planning documents will enable developers to create more well-thought-out and stable products.
 
-## A case for text to graphs for NLU
-
-In addition to this immediate use case, this project serves as a first step towards another, longer-term goal: the creation of machine systems that can parse longer text inputs, remembering attributes of multiple parties described and understanding the developing relationships & potential dynamics between them. I believe that to develop this kind of understanding requires the conversion of text into knowledge graphs or similar structures.
-
-UML class diagrams are a good initial target for this treatment due to their use of standard terminology (like "class", "method" and "inherits from"), their clear purpose of describing interactions between OOP classes, and their frequent use by technophiles.
-
 ## Process
 
 The process will be based on previous work by Kumar, et al.\cite{KumarKnowledgeGraphbased2017e}
@@ -54,4 +48,8 @@ As the process is refined, hardware needs will need to be determined such that p
 
 The primary goal of this project is to create a very fast interface for translating speech from multiple participants in a brainstorming session into a usable UML class diagram.
 
-In addition to practical use cases on development teams, this will serve as a prototype for future spoken interfaces that can build knowledge throughout a conversation and understand how the various entities described relate to each other.
+## A case for text to graphs for NLU
+
+In addition to this immediate use case, this project serves as a first step towards another, longer-term goal: the creation of machine systems that can parse longer text inputs, remembering attributes of multiple parties described and understanding the developing relationships & potential dynamics between them. I believe that to develop this kind of understanding requires the conversion of text into knowledge graphs or similar structures.
+
+UML class diagrams serve as the initial target for this treatment due to their use of standard terminology (like "class", "method" and "inherits from"), their clear purpose of describing interactions between OOP classes, and their frequent use by technophiles who might more readily adopt this novel approach to working with familiar documents.
