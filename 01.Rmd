@@ -35,7 +35,7 @@ I propose to build an NLP tool that will convert the speech of a brainstorming g
 
 ## Process
 
-The process will be based on previous work by Kumar, et al.[KumarKnowledgeGraphbased2017e]
+The process will be based on previous work by Kumar, et al.[@KumarKnowledgeGraphbased2017e]
 
 I propose to use Amazon Transcribe or Speech-to-Text-WaveNet to convert speech into text.
 
