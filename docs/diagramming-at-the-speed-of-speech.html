@@ -129,7 +129,7 @@
 </div>
 <div id="process" class="section level2">
 <h2><span class="header-section-number">1.2</span> Process</h2>
-<p>The process will be based on previous work by Kumar, et al.</p>
+<p>The process will be based on previous work by Kumar, et al.<span class="citation">(Kumar et al. <a href="#ref-kumar_towards_2017">2017</a>)</span></p>
 <p>I propose to use Amazon Transcribe or Speech-to-Text-WaveNet to convert speech into text.</p>
 <p>Amazon Lex will most likely serve as the primary chat engine, with spaCy or ParlAI helping to process incoming language. PyTorch neural networks will be deployed to identify linguistic structures (like queries vs declarative or imperative sentences). By identifying the type of sentence early on, we can abide by a CQRS (Command Query Separation) design principle, and thus appropriately treat questions differently than statements.</p>
 <p>For flexibility in utilizing the synonyms of graphing commands, trained FastText vectors or Cortical.io semantic fingerprints will be used (so that “let’s make” can trigger the same actions as “let’s create” without all such terms needing to be hard coded).</p>
@@ -146,6 +146,12 @@
 <p>In addition to this immediate use case, this project serves as a first step towards another, longer-term goal: the creation of machine systems that can parse longer text inputs, remembering attributes of multiple parties described and understanding the developing relationships &amp; potential dynamics between them. I believe that to develop this kind of understanding requires the conversion of text into knowledge graphs or similar structures.</p>
 <p>UML class diagrams serve as the initial target for this treatment due to their use of standard terminology (like “class”, “method” and “inherits from”), their clear purpose of describing interactions between OOP classes, and their frequent use by technophiles who might more readily adopt this novel approach to working with familiar documents.</p>
 
+</div>
+</div>
+<h3>Bibliography</h3>
+<div id="refs" class="references">
+<div id="ref-kumar_towards_2017">
+<p>Kumar, Ashwini Jaya, Sören Auer, Christoph Schmidt, and Joachim köhler. 2017. “Towards a Knowledge Graph Based Speech Interface.” <em>arXiv:1705.09222 [Cs]</em>, May. <a href="http://arxiv.org/abs/1705.09222" class="uri">http://arxiv.org/abs/1705.09222</a>.</p>
 </div>
 </div>
             </section>
