@@ -20,11 +20,21 @@ library(magrittr)
 
 ## The importance of planning at brainstorming speed.
 
-It’s common knowledge that the quality of a project is usually a direct result of the amount of planning that goes into it. Nevertheless, project creators frequently plow past critical planning steps.
+It’s common knowledge that the quality of a project is usually a direct result of the amount of planning that goes into it.
 
-One milestone that is often skipped in software development is the creation of robust UML class diagrams, which provide concrete, visual representations of how the various elements of a piece of software will divide responsibilities and interact with one another.
+Nevertheless, project creators frequently plow past critical planning steps, because taking the time to create detailed specification documents is tedious. And due to confirmation bias, it's easy to perceive that everyone already 'gets it,' when a lot of ambiguity may still exist.
+
+In software development, one critical but often skipped part of the preproduction worflow is the creation of robust UML class diagrams. These diagrams provide concrete, visual representations of how the various elements of a software system will divide responsibilities and interact with one another.
+
+Without them, a development team progresses more slowly, risks redundant components being created, and must constantly navigate issues of ambiguity related to the project scope and how various teammembers' work will address it.
+
+An example of a UML diagram is presented here:
 
 ![An example of a UML Class Diagram](https://www.uml-diagrams.org/examples/class-diagram-example-hasp-licensing-domain.png)
+
+Current tools to create UML's take a long time to do simple work. In addition to being an unappealing task at the start of a new project, this also forces the creation of clean UML diagrams to be solo work, despite the fact that its purpose is to 
+
+By removing the greatest pain points of time 
 
 I propose to build an NLP tool that will convert the speech of a brainstorming group of developers into a clear UML class diagram. The goal is that the frictionless creation of clear, useful planning documents will enable developers to create more well-thought-out and stable products.
 
