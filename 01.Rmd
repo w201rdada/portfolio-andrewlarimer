@@ -4,11 +4,6 @@ output:
   pdf_document: default
   bibliography : references.bib
 ---
-```{r init,include=FALSE,echo=FALSE}
-
-library(magrittr)
-
-```
 
 # Speech2Graph {#diagramming-at-the-speed-of-speech}
 
