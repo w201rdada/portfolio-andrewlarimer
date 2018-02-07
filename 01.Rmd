@@ -1,57 +1,38 @@
----
-output:
-  html_document: default
-  pdf_document: default
-  bibliography : references.bib
----
-
-# Speech2Graph {#diagramming-at-the-speed-of-speech}
-
-#### Keywords {-}
-
-- NLP / NLU
-- Graph
-- UML
-
 ## The importance of planning at brainstorming speed.
 
-It’s common knowledge that the quality of a project is usually a direct result of the amount of planning that goes into it.
+It’s common knowledge that the quality of a project is usually a direct result of the amount of planning that goes into it. Nevertheless, project creators frequently bypass critical planning steps.
 
-Nevertheless, project creators frequently plow past critical planning steps, because taking the time to create detailed specification documents is tedious. And due to confirmation bias, it's easy to perceive that everyone already 'gets it,' when a lot of ambiguity may still exist.
+In software development, UML class diagrams are one of those documents that are too frequently skipped. These diagrams provide concrete, visual representations of how the various elements of a software system will divide responsibilities and interact with one another. And the process of collaboratively creating them allows everyone to be present for certain decisions that define the heuristics for a given software system.
 
-In software development, one critical but often skipped part of the preproduction worflow is the creation of robust UML class diagrams. These diagrams provide concrete, visual representations of how the various elements of a software system will divide responsibilities and interact with one another.
-
-Without them, a development team progresses more slowly, risks redundant components being created, and must constantly navigate issues of ambiguity related to the project scope and how various teammembers' work will address it.
+Without completing that process and arriving at robust class diagrams, a development team progresses more slowly, risks redundant components being created, and must constantly navigate issues of ambiguity related to the project scope, the working metaphor(s) of the system, and the division of work among the team.
 
 An example of a UML diagram is presented here:
 
 ![An example of a UML Class Diagram](https://www.uml-diagrams.org/examples/class-diagram-example-hasp-licensing-domain.png)
 
-Current tools to create UML's take a long time to do simple work. In addition to being an unappealing task at the start of a new project, this also forces the creation of clean UML diagrams to be solo work, despite the fact that its purpose is to 
+##So if they are so important, why are these documents skipped?
 
-By removing the greatest pain points of time 
+Because of the inadequate tools currently used to create them.
 
-I propose to build an NLP tool that will convert the speech of a brainstorming group of developers into a clear UML class diagram. The goal is that the frictionless creation of clear, useful planning documents will enable developers to create more well-thought-out and stable products.
+One common tool for collaborative diagramming is the whiteboard. While whiteboard sketches facilitate the collaborative brainstorming process, the size of the canvas is quite limited, and unless there is a very talented moderator, only a very limited portion of a project can be visualized before the board is full or the lines have become too messy to proceed.
 
-## Process
+The alternate method is to use software that allows for the creation of a large, clean diagram on an infinite canvas. While this method may arrive at a more ‘perfect’ end result, the time to create it almost necessitates that it is done by a solo individual, and thus the key process of arriving at a mutually agreed-upon UML has been missed, and the document will hold less authoritative weight in the minds of the team.
+
+##Enter Speech2Text
+
+Speech2Text is a collaborative NLP tool that will allow for the best of both worlds: converting the speech of an actively brainstorming group of developers into a clear UML class diagram on an infinite canvas.
+
+Several components will be connected to make the tool: A Speech-to-Text-WaveNet will convert the users’ speech to text. With Amazon Lex serving as the primary chat engine, SpaCy and ParlAI will power additional language comprehension tasks. And by utilizing trained Cortical.io semantic fingerprints, synonymous commands can be perceived (so "let's make" can trigger the same actions as "let's create" without all such terms needing to be hard coded).
+
+Once the language has been processed, TinkerPop3 will provide the graph's knowledge storage, traversal and manipulation. The graph will be visually rendered to the display canvas via d3. 
+
+The system will provide visual feedback to the group, such as a cloud with a question mark when too many voices are speaking at once for it to hear what is being said. This will provide intuitive feedback and positive reinforcement of avoiding excessive interruptions and crosstalk.
+
+The system will also provide a standard GUI interface for parallel creation and editing of the class diagrams to allow for quick & easy correction of errors made by the system, thus ensuring the tool is not rendered useless by a few errors.
 
 The process will be based on previous work by Kumar, et al.[@kumar_towards_2017]
 
-I propose to use Amazon Transcribe or Speech-to-Text-WaveNet to convert speech into text.
-
-Amazon Lex will most likely serve as the primary chat engine, with spaCy or ParlAI helping to process incoming language. PyTorch neural networks will be deployed to identify linguistic structures (like queries vs declarative or imperative sentences). By identifying the type of sentence early on, we can abide by a CQRS (Command Query Separation) design principle, and thus appropriately treat questions differently than statements.
-
-For flexibility in utilizing the synonyms of graphing commands, trained FastText vectors or Cortical.io semantic fingerprints will be used (so that "let's make" can trigger the same actions as "let's create" without all such terms needing to be hard coded).
-
-Once the language has been processed, TinkerPop3 will provide the graph's knowledge storage, traversal and manipulation.
-
-The graph will be visually rendered to the display canvas via d3, or potentially an open source UML toolkit to allow for subsequent or parallel editing via a standard GUI interface.
-
 As the process is refined, hardware needs will need to be determined such that processing can happen in realtime.
-
-## End goal
-
-The primary goal of this project is to create a very fast interface for translating speech from multiple participants in a brainstorming session into a usable UML class diagram.
 
 ## A case for text to graphs for NLU
 
