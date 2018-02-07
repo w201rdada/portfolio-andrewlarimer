@@ -61,7 +61,7 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">Oski Bear</a></li>
+<li><a href="./">Andrew Larimer</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome!</a><ul>
@@ -69,8 +69,8 @@
 </ul></li>
 <li class="chapter" data-level="1" data-path="diagramming-at-the-speed-of-speech.html"><a href="diagramming-at-the-speed-of-speech.html"><i class="fa fa-check"></i><b>1</b> Speech2Graph</a><ul>
 <li class="chapter" data-level="1.1" data-path="diagramming-at-the-speed-of-speech.html"><a href="diagramming-at-the-speed-of-speech.html#the-importance-of-planning-at-brainstorming-speed."><i class="fa fa-check"></i><b>1.1</b> The importance of planning at brainstorming speed.</a></li>
-<li class="chapter" data-level="1.2" data-path="diagramming-at-the-speed-of-speech.html"><a href="diagramming-at-the-speed-of-speech.html#process"><i class="fa fa-check"></i><b>1.2</b> Process</a></li>
-<li class="chapter" data-level="1.3" data-path="diagramming-at-the-speed-of-speech.html"><a href="diagramming-at-the-speed-of-speech.html#end-goal"><i class="fa fa-check"></i><b>1.3</b> End goal</a></li>
+<li class="chapter" data-level="1.2" data-path="diagramming-at-the-speed-of-speech.html"><a href="diagramming-at-the-speed-of-speech.html#so-if-they-are-so-important-why-are-these-documents-skipped"><i class="fa fa-check"></i><b>1.2</b> So if they are so important, why are these documents skipped?</a></li>
+<li class="chapter" data-level="1.3" data-path="diagramming-at-the-speed-of-speech.html"><a href="diagramming-at-the-speed-of-speech.html#enter-speech2text"><i class="fa fa-check"></i><b>1.3</b> Enter Speech2Text</a></li>
 <li class="chapter" data-level="1.4" data-path="diagramming-at-the-speed-of-speech.html"><a href="diagramming-at-the-speed-of-speech.html#a-case-for-text-to-graphs-for-nlu"><i class="fa fa-check"></i><b>1.4</b> A case for text to graphs for NLU</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="slug-two.html"><a href="slug-two.html"><i class="fa fa-check"></i><b>2</b> My second cool idea</a><ul>
@@ -109,37 +109,35 @@
 <ul>
 <li>NLP / NLU</li>
 <li>Graph</li>
-<li>UML</li>
+<li>Collaboration Tool</li>
 </ul>
 </div>
 <div id="the-importance-of-planning-at-brainstorming-speed." class="section level2">
 <h2><span class="header-section-number">1.1</span> The importance of planning at brainstorming speed.</h2>
-<p>It’s common knowledge that the quality of a project is usually a direct result of the amount of planning that goes into it.</p>
-<p>Nevertheless, project creators frequently plow past critical planning steps, because taking the time to create detailed specification documents is tedious. And due to confirmation bias, it’s easy to perceive that everyone already ‘gets it,’ when a lot of ambiguity may still exist.</p>
-<p>In software development, one critical but often skipped part of the preproduction worflow is the creation of robust UML class diagrams. These diagrams provide concrete, visual representations of how the various elements of a software system will divide responsibilities and interact with one another.</p>
-<p>Without them, a development team progresses more slowly, risks redundant components being created, and must constantly navigate issues of ambiguity related to the project scope and how various teammembers’ work will address it.</p>
+<p>It’s common knowledge that the quality of a project is usually a direct result of the amount of planning that goes into it. Nevertheless, project creators frequently bypass critical planning steps.</p>
+<p>In software development, UML class diagrams are one of those documents that are too frequently skipped. These diagrams provide concrete, visual representations of how the various elements of a software system will divide responsibilities and interact with one another. And the process of collaboratively creating them allows everyone to be present for certain decisions that define the heuristics for a given software system.</p>
+<p>Without completing that process and arriving at robust class diagrams, a development team progresses more slowly, risks redundant components being created, and must constantly navigate issues of ambiguity related to the project scope, the working metaphor(s) of the system, and the division of work among the team.</p>
 <p>An example of a UML diagram is presented here:</p>
 <div class="figure">
 <img src="https://www.uml-diagrams.org/examples/class-diagram-example-hasp-licensing-domain.png" alt="An example of a UML Class Diagram" />
 <p class="caption">An example of a UML Class Diagram</p>
 </div>
-<p>Current tools to create UML’s take a long time to do simple work. In addition to being an unappealing task at the start of a new project, this also forces the creation of clean UML diagrams to be solo work, despite the fact that its purpose is to</p>
-<p>By removing the greatest pain points of time</p>
-<p>I propose to build an NLP tool that will convert the speech of a brainstorming group of developers into a clear UML class diagram. The goal is that the frictionless creation of clear, useful planning documents will enable developers to create more well-thought-out and stable products.</p>
 </div>
-<div id="process" class="section level2">
-<h2><span class="header-section-number">1.2</span> Process</h2>
+<div id="so-if-they-are-so-important-why-are-these-documents-skipped" class="section level2">
+<h2><span class="header-section-number">1.2</span> So if they are so important, why are these documents skipped?</h2>
+<p>Because of the inadequate tools currently used to create them.</p>
+<p>One common tool for collaborative diagramming is the whiteboard. While whiteboard sketches facilitate the collaborative brainstorming process, the size of the canvas is quite limited, and unless there is a very talented moderator, only a very limited portion of a project can be visualized before the board is full or the lines have become too messy to proceed.</p>
+<p>The alternate method is to use software that allows for the creation of a large, clean diagram on an infinite canvas. While this method may arrive at a more ‘perfect’ end result, the time to create it almost necessitates that it is done by a solo individual, and thus the key process of arriving at a mutually agreed-upon UML has been missed, and the document will hold less authoritative weight in the minds of the team.</p>
+</div>
+<div id="enter-speech2text" class="section level2">
+<h2><span class="header-section-number">1.3</span> Enter Speech2Text</h2>
+<p>Speech2Text is a collaborative NLP tool that will allow for the best of both worlds: converting the speech of an actively brainstorming group of developers into a clear UML class diagram on an infinite canvas.</p>
+<p>Several components will be connected to make the tool: A Speech-to-Text-WaveNet will convert the users’ speech to text. With Amazon Lex serving as the primary chat engine, SpaCy and ParlAI will power additional language comprehension tasks. And by utilizing trained Cortical.io semantic fingerprints, synonymous commands can be perceived (so “let’s make” can trigger the same actions as “let’s create” without all such terms needing to be hard coded).</p>
+<p>Once the language has been processed, TinkerPop3 will provide the graph’s knowledge storage, traversal and manipulation. The graph will be visually rendered to the display canvas via d3.</p>
+<p>The system will provide visual feedback to the group, such as a cloud with a question mark when too many voices are speaking at once for it to hear what is being said. This will provide intuitive feedback and positive reinforcement of avoiding excessive interruptions and crosstalk.</p>
+<p>The system will also provide a standard GUI interface for parallel creation and editing of the class diagrams to allow for quick &amp; easy correction of errors made by the system, thus ensuring the tool is not rendered useless by a few errors.</p>
 <p>The process will be based on previous work by Kumar, et al.<span class="citation">(Kumar et al. <a href="#ref-kumar_towards_2017">2017</a>)</span></p>
-<p>I propose to use Amazon Transcribe or Speech-to-Text-WaveNet to convert speech into text.</p>
-<p>Amazon Lex will most likely serve as the primary chat engine, with spaCy or ParlAI helping to process incoming language. PyTorch neural networks will be deployed to identify linguistic structures (like queries vs declarative or imperative sentences). By identifying the type of sentence early on, we can abide by a CQRS (Command Query Separation) design principle, and thus appropriately treat questions differently than statements.</p>
-<p>For flexibility in utilizing the synonyms of graphing commands, trained FastText vectors or Cortical.io semantic fingerprints will be used (so that “let’s make” can trigger the same actions as “let’s create” without all such terms needing to be hard coded).</p>
-<p>Once the language has been processed, TinkerPop3 will provide the graph’s knowledge storage, traversal and manipulation.</p>
-<p>The graph will be visually rendered to the display canvas via d3, or potentially an open source UML toolkit to allow for subsequent or parallel editing via a standard GUI interface.</p>
 <p>As the process is refined, hardware needs will need to be determined such that processing can happen in realtime.</p>
-</div>
-<div id="end-goal" class="section level2">
-<h2><span class="header-section-number">1.3</span> End goal</h2>
-<p>The primary goal of this project is to create a very fast interface for translating speech from multiple participants in a brainstorming session into a usable UML class diagram.</p>
 </div>
 <div id="a-case-for-text-to-graphs-for-nlu" class="section level2">
 <h2><span class="header-section-number">1.4</span> A case for text to graphs for NLU</h2>
