@@ -31,13 +31,13 @@ Welcome to my little corner of the internet.
 knitr::include_url('https://drive.google.com/file/d/0B6bobRDQR96iVEV3SXJJal9CczQ/preview')
 -->
 
-### Speech2Graph: Graphing knowledge at the speed of speech. {-}
+### Speech2Graph: Graphical representation at the speed of speech. {-}
 
 In my first project for UC Berkeley's RDADA class, I discuss how a system might build out graph databases from spoken collaborations.
 
 ## About Andrew Larimer {-}
 
-Andrew is a theatre artist, entrepreneur & aspiring data scientist.
+Andrew is a data scientist, entrepreneur & theatre artist.
 
 Andrew Larimer was the founding Artistic Director of The NOLA Project theatre company, and has produced, written, and directed in the New Orleans theatre for thirteen years. He wrote & directed Get This Lake Off My House, an early original hit for The NOLA Project after Hurricane Katrina. Most recently he wrote & directed Exterior. Pool - Night, performed at the Aloft Downtown New Orleans hotel. He has also directed A Midsummer Night’s Dream and Adventures in Wonderland at NOMA’s Besthoff Sculpture Garden, both of which earned him Big Easy Awards as Best Director of a Comedy.
 

@@ -5,7 +5,7 @@ output:
   bibliography : references.bib
 ---
 
-# Speech2Graph {#diagramming-at-the-speed-of-speech}
+# Speech2Graph: Graphical representation at the speed of speech {#speech2graph}
 
 #### Keywords {-}
 
