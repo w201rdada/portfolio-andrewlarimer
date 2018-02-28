@@ -7,5 +7,29 @@
 - Diagnostics
 - Health Tech
 
-## More info coming soon...
+## Many of us are at risk of heart disease, and we get checked too rarely to modify behavior or notice spikes.
 
+Heart disease is the number one cause of death in the US, leading to the deaths of 600,000 people each year. [@MortalityUnitedStates] Nearly 31% of deaths globally are reported to be caused by cardiovascular diseases (CVDs). [@AbdulRehmanRoleSalivaryBiomarkers2017a] And almost half of all US adults (47%) have at least one of the three major risk factors for CVD: uncontrolled high blood pressure, uncontrolled high levels of low-density lipoproteins (LDL) cholesterol, or are smokers. [@PrevalenceUncontrolledRisk]
+
+Despite the prevalence of risks and disease, Americans tend to get checked out only four times a year on average, with a significant positive skew to that data showing that the vast majority go once a year, if at all. [Citation forthcoming]
+
+Other diseases are screened even less frequently, waiting until a problem has been detected.
+
+
+## Enter the Wisdom Tooth
+
+Fortunately, improvements in lab-on-a-chip technology and micro-fluidics have led to breakthroughs in salivary diagnostics.  And because most people see their dentist more frequently than their primary care physician, many doctors are now advocating for dentists to conduct oral screenings at every visit, to be able to catch more serious diseases earlier.[@RathnayakeSalivaryDiagnosticsPointofCare2017]
+
+Nevertheless, the twice a year people visit their dentist is still not enough. But the presence of so much data about one's health in one convenient location creates an opportunity for a personal health product that can provide much more important diagnostic information than current wearables can hope to provide from the wrist.
+
+The Wisdoom Tooth is a device that collects a suite of micro-fluidics channels and lab-on-a-chip sensors into a 3D printed shell that sits in an individual's mouth as a standard dental cap on a molar.
+
+When the user sleeps (as detected from a prolonged resting state and change of breath), The Wisdom Tooth runs a diagnostic analysis of the saliva, the results of which are sent only to the user's phone for analysis.
+
+Results can be shared, at the user's discretion, with a physician or other health monitoring service, and any anomalies will result in a notification to the user that they may want to look more deeply into a particular potential issue.
+
+## Health Intervention at the Earliest Possible Stage
+
+Being able to intervene as early as possible is key to the treatment of many diseases.
+
+The Wisdom Tooth offers the user the benefit of detection of a huge array of health issues at the earliest possible stage, while maintaining full control over their own health information.
