@@ -30,6 +30,7 @@ When the user sleeps (as detected from a prolonged resting state and change of b
 
 Results can be shared, at the user's discretion, with a physician or other health monitoring service, and any anomalies will result in a notification to the user that they may want to look more deeply into a particular potential issue.
 
+
 ## Health Intervention at the Earliest Possible Stage
 
 Being able to intervene as early as possible is key to the treatment of many diseases.
