@@ -18,15 +18,18 @@ Other diseases are screened even less frequently, waiting until a problem has be
 
 ## Enter the Wisdom Tooth
 
-Fortunately, improvements in lab-on-a-chip technology and micro-fluidics have led to breakthroughs in salivary diagnostics.  And because most people see their dentist more frequently than their primary care physician, many doctors are now advocating for dentists to conduct oral screenings at every visit, to be able to catch more serious diseases earlier.[@RathnayakeSalivaryDiagnosticsPointofCare2017]
+Fortunately, improvements in lab-on-a-chip technology and micro-fluidics have led to breakthroughs in salivary diagnostics. Biomarkers for heart disease and cancers, the presence of problematic bacteria, and now even the presence of many viruses including HIV can be detected. [Group of citations forthcoming.]
 
-Nevertheless, the twice a year people visit their dentist is still not enough. But the presence of so much data about one's health in one convenient location creates an opportunity for a personal health product that can provide much more important diagnostic information than current wearables can hope to provide from the wrist.
+Because most people see their dentist more frequently than their primary care physician, many doctors are now advocating for dentists to conduct oral screenings at every visit, to be able to catch more serious diseases before symptoms develop.[@RathnayakeSalivaryDiagnosticsPointofCare2017]
+
+Nevertheless, the twice a year or so that people visit their dentist is still not enough. But the presence of so much data about one's health in one convenient location creates an opportunity for a personal health product that can provide much more important diagnostic information than current wearables can hope to provide from the wrist.
 
 The Wisdoom Tooth is a device that collects a suite of micro-fluidics channels and lab-on-a-chip sensors into a 3D printed shell that sits in an individual's mouth as a standard dental cap on a molar.
 
 When the user sleeps (as detected from a prolonged resting state and change of breath), The Wisdom Tooth runs a diagnostic analysis of the saliva, the results of which are sent only to the user's phone for analysis.
 
 Results can be shared, at the user's discretion, with a physician or other health monitoring service, and any anomalies will result in a notification to the user that they may want to look more deeply into a particular potential issue.
+
 
 ## Health Intervention at the Earliest Possible Stage
 
