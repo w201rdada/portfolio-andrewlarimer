@@ -7,32 +7,35 @@
 - Diagnostics
 - Health Tech
 
-## Many of us are at risk of heart disease, and we get checked too rarely to modify behavior or notice spikes.
+## In-home salivary diagnostics for heart disease
 
 Heart disease is the number one cause of death in the US, leading to the deaths of 600,000 people each year. [@MortalityUnitedStates] Nearly 31% of deaths globally are reported to be caused by cardiovascular diseases (CVDs). [@AbdulRehmanRoleSalivaryBiomarkers2017a] And almost half of all US adults (47%) have at least one of the three major risk factors for CVD: uncontrolled high blood pressure, uncontrolled high levels of low-density lipoproteins (LDL) cholesterol, or are smokers. [@PrevalenceUncontrolledRisk]
 
-Despite the prevalence of risks and disease, Americans tend to get checked out only four times a year on average, with a significant positive skew to that data showing that the vast majority go once a year, if at all. [Citation forthcoming]
+Current cholesterol tests require multiple doctors visits, with one visit for a blood sample to be drawn, and another visit to discuss the results with the physician. These doctors visits are a deterrent to the identification of CVD risks in many people, as up to one-third of Americans say they avoid going to the doctor. [@WhyPeopleAvoid]
 
-Other diseases are screened even less frequently, waiting until a problem has been detected.
+Smartphone-enabled cholesterol blood tests that people can use at home have been developed, with results as accurate as clinical tests[@Cholesteroltestingsmartphoneb], but those tests require collecting a drop of blood. Studies of individuals with diabetes have shown that pain of pinpricks are a barriere to recommended daily Self-Monitoring of Blood Glucose (SMBG), with one patient saying, "Once you prick, you will still jump a bit. Whoever says no pain is faking it. If I test every day, my fingers will have many holes, very painful. [P08, 48-year-old female housewife, diabetes for 1 year]"[@Barriersfacilitatorsselfmonitoring]. This pain, along with other factors like cost, lead to only 26% of Americans with diabetes using insulin practicing the recommended daily SMBG tests.[@Barriersfacilitatorsselfmonitoring]
 
+Fortunately, cholesterol levels in the saliva, which is less painful and easier to collect, can indicate high levels of cholesterol in the blood.[@KarjalainenSalivarycholesterolhealthy1997] 
 
 ## Enter the Wisdom Tooth
 
-Fortunately, improvements in lab-on-a-chip technology and micro-fluidics have led to breakthroughs in salivary diagnostics. Biomarkers for heart disease and cancers, the presence of problematic bacteria, and now even the presence of many viruses including HIV can be detected. [Group of citations forthcoming.]
+By combining elements of the design of the smartphone-enabled blood test with test strips designed to test for cholesterol via saliva, we will create a device that can help people monitor for high cholesterol levels without doctors visits or pinpricks. Furthermore, by designing the experience of using the device to fit in with existing habits of brushing one's teeth, we can achieve higher adoption rates by piggy backing on an existing habit.
 
-Because most people see their dentist more frequently than their primary care physician, many doctors are now advocating for dentists to conduct oral screenings at every visit, to be able to catch more serious diseases before symptoms develop.[@RathnayakeSalivaryDiagnosticsPointofCare2017]
+The Wisdom Tooth device will be a small device, about the size of a toothbrush holder, designed with a ceramic exterior to fit in with the aesthetics of many American bathrooms. It is intended to sit on a bathroom sink countertop or in a medicine cabinet wherever an individual would store his or her toothbrush and other oral hygiene products.
 
-Nevertheless, the twice a year or so that people visit their dentist is still not enough. But the presence of so much data about one's health in one convenient location creates an opportunity for a personal health product that can provide much more important diagnostic information than current wearables can hope to provide from the wrist.
+The at-home smartphone-enabled blood test used the smartphone's flash and camera to illuminate and capture imagery to analyze of the blood sample. Instead of utilizing the camera from the user's smartphone, which requires inserting the smartphone into the device, the Wisdom Tooth will have its own diffuse light source and camera. The price of small on-chip cameras have gone down significantly, and we feel that the insertion of the phone into the device would be a barrier to user adoption and increase the rate of obsolecense as phone models change. The Wisdom Tooth will instead pair with a user's smartphone via Bluetooth to control the functions of the device, provide computing resources and receive results.
 
-The Wisdoom Tooth is a device that collects a suite of micro-fluidics channels and lab-on-a-chip sensors into a 3D printed shell that sits in an individual's mouth as a standard dental cap on a molar.
+A small slide tray will be removed from the device by the user, saliva will be spit into a reservoir at one end of the slide, and a sliding squeegee will remove excess saliva from the reservoir and the tray surface. The tray will then be inserted into the device, and the accompanying app opened on the user's smartphone to initiate the test.
 
-When the user sleeps (as detected from a prolonged resting state and change of breath), The Wisdom Tooth runs a diagnostic analysis of the saliva, the results of which are sent only to the user's phone for analysis.
+The device will spool forward and cut a small strip of physically reactive test strip, and microfluidic channels in the tray will direct the saliva to the test strip. The device's camera will calibrate itself against a gray strip on the tray to adjust to current lighting conditions. It will then capture imagery of the test strip. The test strip is a physical strip, and thus supplies of this would need to be re-ordered or delivered via a subscription to the user.
 
-Results can be shared, at the user's discretion, with a physician or other health monitoring service, and any anomalies will result in a notification to the user that they may want to look more deeply into a particular potential issue.
+By utilzing a camera within an enclosed, lighting-controlled environment, the evaluation of the test strips will be more objective & accurate than relying on untrained individuals in highly varying lighting conditions to diagnose their own results.
 
 
 ## Health Intervention at the Earliest Possible Stage
 
-Being able to intervene as early as possible is key to the treatment of many diseases.
+In addition to detecting CVD risks, developments in salivary diagnostics have led to tests for biomarkers of cancers, Alzheimer's disease, viruses including HIV, various harmful bacteria, and more.[@RathnayakeSalivaryDiagnosticsPointofCare2017]
 
-The Wisdom Tooth offers the user the benefit of detection of a huge array of health issues at the earliest possible stage, while maintaining full control over their own health information.
+By creating an easy at-home test that can utilize cartridges of various test strips, the ability to detect many conditions early and at low cost will allow for early intervention and care. And the frequency of tests will allow for users to receive more immediate feedback when lifestyle changes lead to either increases or decreases in dangerous lipid levels.
+
+The Wisdom Tooth in the longterm offers the user the benefit of detection of a huge array of health issues at the earliest possible stage, while maintaining full control over their own health information.
