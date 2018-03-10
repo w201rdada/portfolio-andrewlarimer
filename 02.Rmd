@@ -9,7 +9,7 @@
 
 ## In-home salivary diagnostics for heart disease
 
-Heart disease is the number one cause of death in the US, leading to the deaths of 600,000 people each year. [@MortalityUnitedStates] Nearly 31% of deaths globally are reported to be caused by cardiovascular diseases (CVDs). [@AbdulRehmanRoleSalivaryBiomarkers2017a] And almost half of all US adults (47%) have at least one of the three major risk factors for CVD: uncontrolled high blood pressure, uncontrolled high levels of low-density lipoproteins (LDL) cholesterol, or are smokers. [@PrevalenceUncontrolledRisk]
+Heart disease is the number one cause of death in the US, leading to the deaths of 600,000 people each year. [@MortalityUnitedStates] Nearly 31% of deaths globally are reported to be caused by cardiovascular diseases (CVDs). [@AbdulRehmanRoleSalivaryBiomarkers2017] And almost half of all US adults (47%) have at least one of the three major risk factors for CVD: uncontrolled high blood pressure, uncontrolled high levels of low-density lipoproteins (LDL) cholesterol, or are smokers. [@PrevalenceUncontrolledRisk]
 
 Current cholesterol tests require multiple doctors visits, with one visit for a blood sample to be drawn, and another visit to discuss the results with the physician. These doctors visits are a deterrent to the identification of CVD risks in many people, as up to one-third of Americans say they avoid going to the doctor. [@WhyPeopleAvoid]
 
