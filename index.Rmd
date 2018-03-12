@@ -32,7 +32,12 @@ knitr::include_url('https://drive.google.com/file/d/0B6bobRDQR96iVEV3SXJJal9CczQ
 
 ### Speech2Graph: Graphical representation at the speed of speech. {-}
 
-In my first project for UC Berkeley's RDADA class, I discuss how a system might build out graph databases from spoken collaborations.
+In my first project for UC Berkeley's RDADA class, I discuss how a system might build out a knowledge graph over the course of a spoken conversation. In addition to this being a step towards AI being able to maintain knowledge of characters & relationships throughout a conversation, in this case it can also help developers collaborate on UML diagrams quickly & easily.
+
+### The Wisdom Tooth: Daily diagnostics of oral fluids {-}
+
+Americans hate going to the doctor, and love generally putting themselves at risk of health problems due to poor lifestyle choices. The Wisdom Tooth is an at-home diagnostic product that will attempt to provide more immediate feedback on good and bad lifestyle choices, as well as screen users for diseases for which they're not even experiencing symptoms. It hopes to save lives, by adding one small step to an individual's pre-toothbrushing habits.
+
 
 ## About Andrew Larimer {-}
 
